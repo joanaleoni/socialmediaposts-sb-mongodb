@@ -1,11 +1,14 @@
 package com.joana.socialmediaposts.domain;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import com.joana.socialmediaposts.dto.AuthorDTO;
+import com.joana.socialmediaposts.dto.CommentDTO;
 
 @Document(collection="post")
 public class Post implements Serializable {
@@ -16,6 +19,8 @@ public class Post implements Serializable {
 	private String title;
 	private String body;
 	private AuthorDTO author;
+	
+	private List<CommentDTO> comments = new ArrayList<>();
 	
 	public Post() {}
 
@@ -65,6 +70,10 @@ public class Post implements Serializable {
 
 	public void setAuthor(AuthorDTO author) {
 		this.author = author;
+	}	
+
+	public List<CommentDTO> getComments() {
+		return comments;
 	}
 
 	@Override
