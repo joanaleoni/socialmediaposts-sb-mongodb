@@ -1,5 +1,5 @@
 # Social Media Posts
-> Serviço web - Controle de posts e comentários | Java, Spring Boot, MongoDB
+> Serviço web - Controle de posts e comentários | Java, Maven, Spring Boot, MongoDB
 
 ## Conteúdos exercitados
 - Estruturação de camadas lógicas: entity, resource, service, repository
