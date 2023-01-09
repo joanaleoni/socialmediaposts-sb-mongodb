@@ -1,6 +1,8 @@
-package com.joana.socialmediaposts.domain;
+package com.joana.socialmediaposts.dto;
 
 import java.io.Serializable;
+
+import com.joana.socialmediaposts.domain.User;
 
 public class AuthorDTO implements Serializable {
 	private static final long serialVersionUID = 1L;

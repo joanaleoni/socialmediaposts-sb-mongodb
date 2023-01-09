@@ -8,9 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
 
-import com.joana.socialmediaposts.domain.AuthorDTO;
 import com.joana.socialmediaposts.domain.Post;
 import com.joana.socialmediaposts.domain.User;
+import com.joana.socialmediaposts.dto.AuthorDTO;
 import com.joana.socialmediaposts.repositories.PostRepository;
 import com.joana.socialmediaposts.repositories.UserRepository;
 
